@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
+import .userInput.py as user
+import .beam.py as beam 
 
-import numpy as np
+mainMenu()
 
-length = input("Enter the length of the beam: ")
-    
+while True:
+    if selection == 1:
+        addLoad()
+    elif selection == 2:
+        addSup()
+    elif selection == 3:
+        compute()
+        break
+    else:
+        print("Invalid selection")
+        mainMenu()
